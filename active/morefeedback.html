@@ -1,0 +1,203 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCcraft官网</title>
+    <style>
+        body {
+            background-image: url('../module/background.png'); /* 背景图片在module目录下 */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .content-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .blue-title {
+            color: #1E90FF;
+            font-size: 5vw;
+            text-align: center;
+            margin: 50px 0;
+            transition: all 0.3s ease;
+        }
+        .big_on_hover{
+            color:rgb(123, 122, 122);
+            font-size: 1.8vw;
+            transition: all 0.15s ease;
+        }
+        .big_on_hover:hover .blue-title {
+            transform: scale(1.1);
+            text-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+        }
+        .blue-title:active {
+            transform: scale(0.95);
+        }
+        
+        .link-with-image {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .fuzhu-link {
+            color: #1E90FF;
+            font-size: 2vw;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .fuzhu-link:hover {
+            color: #0e76d6;
+            text-decoration: underline;
+            transform: translateY(-3px);
+        }
+        
+        .server-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .server-img:hover {
+            transform: scale(1.05);
+        }
+        
+        .info-container {
+            background-color: rgb(1, 121, 142);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .title_font {
+            font-size: 2.2vw;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .info-subrow {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .list-number {
+            font-size: 1.8vw;
+            font-weight: bold;
+            color: #1E90FF;
+            margin-right: 10px;
+        }
+        
+        .display_setting {
+            font-size: 1.8vw;
+            color: #333;
+        }
+        
+        .second-content-row {
+            display: flex;
+            margin: 8px 0 8px 40px;
+            white-space: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .second-content-row::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .second-content-number {
+            font-size: 1.2vw;
+            color: #666;
+            min-width: fit-content;
+            margin-right: 15px;
+        }
+        
+        .second-content-data {
+            font-size: 1.5vw;
+            color: #333;
+            white-space: nowrap;
+        }
+        .chat-button {
+            position: fixed;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1E90FF;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.8vw;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
+        }
+        
+        .chat-button:hover {
+            background-color: #0e76d6;
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 6px 12px rgba(30, 144, 255, 0.4);
+            color: white;
+        }
+        
+        .chat-button:active {
+            transform: translateX(-50%) scale(0.98);
+            box-shadow: 0 2px 4px rgba(30, 144, 255, 0.3);
+        }
+        .href_text{
+            transition: all 0.15s ease;
+            color:#1E90FF;
+        }
+        .href_text:hover{
+            transform: scale(1.1);
+            color: #46a3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <div class="big_on_hover"><h1 class="blue-title">服务器活动</h1></div>
+        
+        <div class="info-container">
+            <div class="info-row">
+                <div class="title_font">活动</div>
+            </div>
+            <div class="info-subrow">
+                <div class="list-number">1.</div>
+                <div class="display_setting">反馈鼓励</div>
+            </div>
+            
+            <div class="second-content-row">
+                <div class="second-content-number">
+                    <div class="big_on_hover">
+                        <h2>PCcraft反馈鼓励活动</h2></br>
+                        <li>
+                            如果您在游玩过程中遇到了影响游戏体验的BUG并反馈到了服务器反馈箱(/feedback反馈),我们会尽快处理
+                            同时感谢您对服务器的付出,我们会给您游戏内的一个NBT物品作为奖励(NBT物品限制详见<a href="../rules.html">游戏规则</a>)
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
